@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Executive.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TabPane prefHeight="757.0" prefWidth="1055.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Restrictions">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="579.0" prefWidth="876.0">
+                     <children>
+                        <SplitPane dividerPositions="0.46438746438746437" layoutX="212.0" layoutY="197.0" prefHeight="577.0" prefWidth="868.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.40702479338842973" layoutX="66.0" layoutY="190.0" prefHeight="575.0" prefWidth="384.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                             <children>
+                                                <TitledPane animated="false" layoutX="46.0" layoutY="138.0" prefHeight="573.0" prefWidth="219.0" text="Basic characteristics" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="88.0" text="Population">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="44.0" text="from" />
+                                                            <TextField fx:id="Text_population_from" layoutX="46.0" layoutY="40.0" prefHeight="25.0" prefWidth="134.0" text="10" />
+                                                            <TextField fx:id="Text_population_to" layoutX="47.0" layoutY="77.0" prefHeight="25.0" prefWidth="134.0" text="2000" />
+                                                            <Label layoutX="15.0" layoutY="81.0" text="to" />
+                                                            <Label layoutX="15.0" layoutY="184.0" text="to" />
+                                                            <TextField fx:id="Text_gdp_to" layoutX="47.0" layoutY="180.0" prefHeight="25.0" prefWidth="134.0" text="400000" />
+                                                            <TextField fx:id="Text_gdp_from" layoutX="46.0" layoutY="143.0" prefHeight="25.0" prefWidth="134.0" text="30" />
+                                                            <Label layoutX="14.0" layoutY="147.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="117.0" prefHeight="21.0" prefWidth="164.0" text="Gross Domestic Product">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                                </TitledPane>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                             <children>
+                                                <TitledPane animated="false" layoutY="151.0" prefHeight="573.0" prefWidth="191.0" text="Judiciary" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label layoutX="14.0" layoutY="14.0" text="Number of counts">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="41.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="67.0" text="to" />
+                                                            <TextField fx:id="Text_NumCounts_from" layoutX="53.0" layoutY="37.0" text="1000" />
+                                                            <TextField fx:id="Text_NumCounts_to" layoutX="53.0" layoutY="63.0" text="4000" />
+                                                            <TextField fx:id="Text_NumDeals_to" layoutX="53.0" layoutY="149.0" text="10000000" />
+                                                            <TextField fx:id="Text_NumDeals_from" layoutX="53.0" layoutY="123.0" text="100000" />
+                                                            <Label layoutX="14.0" layoutY="153.0" text="to" />
+                                                            <Label layoutX="14.0" layoutY="127.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="100.0" text="Number of deals">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="186.0" text="Number of judges">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="213.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="239.0" text="to" />
+                                                            <TextField fx:id="Text_NumJudges_from" layoutX="53.0" layoutY="209.0" text="1000" />
+                                                            <TextField fx:id="Text_NumJudges_to" layoutX="53.0" layoutY="235.0" text="10000" />
+                                                            <TextField fx:id="Text_JudgeSalary_to" layoutX="53.0" layoutY="317.0" text="10000" />
+                                                            <TextField fx:id="Text_JudgeSalary_from" layoutX="53.0" layoutY="291.0" text="300" />
+                                                            <Label layoutX="14.0" layoutY="321.0" text="to" />
+                                                            <Label layoutX="14.0" layoutY="295.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="268.0" text="Judge's salary">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="369.0" prefHeight="20.0" prefWidth="254.0" text="Number of  Constitutional court's deals">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="396.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="422.0" text="to" />
+                                                            <TextField fx:id="Text_NumDealsConst_from" layoutX="53.0" layoutY="392.0" text="2000" />
+                                                            <TextField fx:id="Text_NumDealsConst_to" layoutX="53.0" layoutY="418.0" text="10000" />
+                                                            <TextField fx:id="Text_NumJudgesConst_to" layoutX="53.0" layoutY="500.0" text="40" />
+                                                            <TextField fx:id="Text_NumJudgesConst_from" layoutX="53.0" layoutY="474.0" text="5" />
+                                                            <Label layoutX="14.0" layoutY="504.0" text="to" />
+                                                            <Label layoutX="14.0" layoutY="478.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="451.0" text="Number of  Constitutional court's judges">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="534.0" text=" Salary of Constitutional court's judge">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="558.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="584.0" text="to" />
+                                                            <TextField fx:id="Text_JudgeSalaryConst_from" layoutX="53.0" layoutY="554.0" text="1000" />
+                                                            <TextField fx:id="Text_JudgeSalaryConst_to" layoutX="53.0" layoutY="580.0" text="50000" />
+                                                            <Separator layoutX="20.0" layoutY="357.0" prefHeight="3.0" prefWidth="258.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="347.5" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                                </TitledPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.4863636363636364" layoutX="14.0" layoutY="310.0" prefHeight="575.0" prefWidth="476.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                             <children>
+                                                <TitledPane animated="false" layoutY="248.0" prefHeight="573.0" prefWidth="262.0" text="Legislature" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label layoutX="14.0" layoutY="14.0" text="Number of parliament's members">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="45.0" text="from" />
+                                                            <TextField fx:id="Text_NumberParliamentMembers_from" layoutX="59.0" layoutY="41.0" text="200" />
+                                                            <TextField fx:id="Text_NumberParliamentMembers_to" layoutX="59.0" layoutY="75.0" text="900" />
+                                                            <Label layoutX="14.0" layoutY="79.0" text="to" />
+                                                            <Label layoutX="14.0" layoutY="189.0" text="to" />
+                                                            <TextField fx:id="Text_SalaryParliamentMember_to" layoutX="59.0" layoutY="185.0" text="10000" />
+                                                            <TextField fx:id="Text_SalaryParliamentMember_from" layoutX="59.0" layoutY="151.0" text="500" />
+                                                            <Label layoutX="14.0" layoutY="155.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="124.0" text="Salary of parliament's members">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="236.0" text="Number of passed laws">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="267.0" text="from" />
+                                                            <TextField fx:id="Text_NumberPassedLaws_from" layoutX="59.0" layoutY="263.0" text="3" />
+                                                            <TextField fx:id="Text_NumberPassedLaws_to" layoutX="59.0" layoutY="297.0" text="600" />
+                                                            <Label layoutX="14.0" layoutY="301.0" text="to" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                                </TitledPane>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                             <children>
+                                                <TitledPane animated="false" layoutX="-71.0" layoutY="193.0" prefHeight="573.0" prefWidth="172.0" text="Executive" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label layoutX="14.0" layoutY="14.0" text="Number of executive departments">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="44.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="78.0" text="to" />
+                                                            <TextField fx:id="Text_NumberDepartments_from" layoutX="57.0" layoutY="40.0" text="5" />
+                                                            <TextField fx:id="Text_NumberDepartments_to" layoutX="57.0" layoutY="74.0" text="80" />
+                                                            <Separator layoutX="13.0" layoutY="99.0" prefHeight="24.0" prefWidth="259.0" />
+                                                            <TextField fx:id="Text_NumberMinistries_to" layoutX="57.0" layoutY="183.0" text="100" />
+                                                            <TextField fx:id="Text_NumberMinistries_from" layoutX="57.0" layoutY="149.0" text="10" />
+                                                            <Label layoutX="14.0" layoutY="187.0" text="to" />
+                                                            <Label layoutX="14.0" layoutY="153.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="123.0" text="Number of ministries">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="13.0" layoutY="339.0" text="Budget of Defence ministry">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="260.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="294.0" text="to" />
+                                                            <TextField fx:id="Text_BudgetCabinet_from" layoutX="57.0" layoutY="256.0" text="100000" />
+                                                            <TextField fx:id="Text_BudgetCabinet_to" layoutX="57.0" layoutY="290.0" text="1000000" />
+                                                            <TextField fx:id="Text_BudgetDefence_to" layoutX="57.0" layoutY="401.0" text="120000" />
+                                                            <TextField fx:id="Text_BudgetDefence_from" layoutX="57.0" layoutY="367.0" text="20000" />
+                                                            <Label layoutX="14.0" layoutY="405.0" text="to" />
+                                                            <Label layoutX="14.0" layoutY="371.0" text="from" />
+                                                            <Label layoutX="15.0" layoutY="229.0" text="Budget of Cabinet">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="450.0" text="Budget of Education ministry">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="14.0" layoutY="480.0" text="from" />
+                                                            <Label layoutX="14.0" layoutY="514.0" text="to" />
+                                                            <TextField fx:id="Text_BudgetEducation_from" layoutX="57.0" layoutY="476.0" text="500" />
+                                                            <TextField fx:id="Text_BudgetEducation_to" layoutX="57.0" layoutY="510.0" text="40000" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                                </TitledPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Pareto set">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="Button_run" layoutX="78.0" layoutY="41.0" mnemonicParsing="false" onAction="#Button_run_on" prefHeight="63.0" prefWidth="469.0" text="Run" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="41.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Button>
+                        <Label layoutX="660.0" layoutY="396.0" text="Basic characteristics:">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <Label layoutX="78.0" layoutY="148.0" text="Executive departments:">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <TextField fx:id="Text_departments" editable="false" layoutX="78.0" layoutY="172.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></TextField>
+                        <TextField fx:id="Text_Ministries" editable="false" layoutX="387.0" layoutY="175.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></TextField>
+                        <Label layoutX="387.0" layoutY="148.0" text="Ministries:">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <Label layoutX="659.0" layoutY="148.0" text="Constitutional court:">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <TextField fx:id="Text_ConstCount" editable="false" layoutX="658.0" layoutY="172.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></TextField>
+                        <TextField fx:id="Text_GeneralCourts" editable="false" layoutX="77.0" layoutY="423.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></TextField>
+                        <Label layoutX="78.0" layoutY="396.0" text="General courts:">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <Label layoutX="393.0" layoutY="396.0" text="Parliament:">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <TextField fx:id="Text_Parliament" editable="false" layoutX="387.0" layoutY="423.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></TextField>
+                        <TextField fx:id="Text_Several_Info" editable="false" layoutX="658.0" layoutY="423.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></TextField>
+                        <TextArea fx:id="TextArea_Executive" editable="false" layoutX="78.0" layoutY="224.0" prefHeight="163.0" prefWidth="218.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="TextArea_Ministries" editable="false" layoutX="387.0" layoutY="224.0" prefHeight="162.0" prefWidth="218.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="TextArea_ConstCount" editable="false" layoutX="658.0" layoutY="224.0" prefHeight="159.0" prefWidth="218.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="TextArea_GenetalCounts" editable="false" layoutX="78.0" layoutY="477.0" prefHeight="186.0" prefWidth="211.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="TextAreaParliament" editable="false" layoutX="387.0" layoutY="477.0" prefHeight="188.0" prefWidth="218.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="TextArea_BasicCharact" editable="false" layoutX="658.0" layoutY="477.0" prefHeight="189.0" prefWidth="218.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <TextField editable="false" layoutX="775.0" layoutY="41.0" prefHeight="25.0" prefWidth="101.0" text="24" />
+                        <TextField layoutX="777.0" layoutY="79.0" prefHeight="25.0" prefWidth="99.0" text="1" />
+                        <Label layoutX="611.0" layoutY="45.0" text="Cardinality of Pareto set" />
+                        <Label layoutX="611.0" layoutY="83.0" text="Choose the structure" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Priority structure">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+
+                         <Button fx:id="Button_run2" layoutX="78.0" layoutY="41.0" mnemonicParsing="false" onAction="#Button_run_on2" prefHeight="63.0" prefWidth="469.0" text="Run" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="41.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="660.0" layoutY="396.0" text="Basic characteristics:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="148.0" text="Executive departments:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Text_departments2" editable="false" layoutX="78.0" layoutY="172.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="Text_Ministries2" editable="false" layoutX="387.0" layoutY="175.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="387.0" layoutY="148.0" text="Ministries:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="659.0" layoutY="148.0" text="Constitutional court:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Text_ConstCount2" editable="false" layoutX="658.0" layoutY="172.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="Text_GeneralCourts2" editable="false" layoutX="77.0" layoutY="423.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="78.0" layoutY="396.0" text="General courts:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="393.0" layoutY="396.0" text="Parliament:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="Text_Parliament2" editable="false" layoutX="387.0" layoutY="423.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="Text_Several_Info2" editable="false" layoutX="658.0" layoutY="423.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextArea fx:id="TextArea_Executive2" editable="false" layoutX="78.0" layoutY="224.0" prefHeight="163.0" prefWidth="218.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="TextArea_Ministries2" editable="false" layoutX="387.0" layoutY="224.0" prefHeight="162.0" prefWidth="218.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="TextArea_ConstCount2" editable="false" layoutX="658.0" layoutY="224.0" prefHeight="159.0" prefWidth="218.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="TextArea_GenetalCounts2" editable="false" layoutX="78.0" layoutY="477.0" prefHeight="186.0" prefWidth="211.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="TextAreaParliament2" editable="false" layoutX="387.0" layoutY="477.0" prefHeight="188.0" prefWidth="218.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="TextArea_BasicCharact2" editable="false" layoutX="658.0" layoutY="477.0" prefHeight="189.0" prefWidth="218.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ComboBox fx:id="ComboBox" layoutX="658.0" layoutY="41.0" prefHeight="25.0" prefWidth="302.0" promptText="Choose a priority setting"/>
+                        <Label layoutX="660.0" layoutY="73.0" text=" (default: the cheapest)" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Image of structure">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="451.0" fitWidth="1065.0" layoutX="159.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Диаграмма.PNG" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</GridPane>
